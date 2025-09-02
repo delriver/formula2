@@ -19,7 +19,12 @@ namespace DataAccess.Repository
         }
         public void Update(Competition obj)
         {
-            throw new NotImplementedException();
+            var objFromDb = _db.Competitions.FirstOrDefault(c => c.Id == obj.Id);
+            if (objFromDb != null)
+            {
+                objFromDb.Name = obj.Name;
+                objFromDb.Description = obj.Description;
+            }
         }
     }
 }

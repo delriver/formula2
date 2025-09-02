@@ -17,6 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj" />
+    <!--<ProjectReference Include="..\Formula2\Formula2.csproj" />-->
   </ItemGroup>
-
 </Project>
