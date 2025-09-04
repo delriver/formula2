@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Models.Models
+namespace Models
 {
     [Table("F2_COMPETITION")]
     public class Competition

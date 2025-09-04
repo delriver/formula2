@@ -9,17 +9,17 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Repository
 {
-    public class CompetitionRepository : Repository<Competition>, ICompetitionRepository
+    public class DriverRepository : Repository<Driver>, IDriverRepository
     {
         private readonly ApplicationDbContext _db;
 
-        public CompetitionRepository(ApplicationDbContext db) : base(db) 
+        public DriverRepository(ApplicationDbContext db) : base(db) 
         {
             _db = db;
         }
-        public void Update(Competition obj)
+        public void Update(Driver obj)
         {
-            _db.Competitions.Update(obj);
+            _db.Drivers.Update(obj);
         }
     }
 }

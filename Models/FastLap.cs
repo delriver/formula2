@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Models.Models
+namespace Models
 {
     [Table("F2_FAST_LAP")]
     public class FastLap
@@ -15,7 +15,7 @@ namespace Models.Models
         [Column("ID_DRIVER")]
         public int DriverId {  get; set; }
 
-        [ForeignKey(nameof(DriverId))]
-        public Driver Driver { get; set; }
+        [ForeignKey("DriverId")]
+        public Driver? Driver { get; set; }
     }
 }

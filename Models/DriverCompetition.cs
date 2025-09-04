@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.Models
+namespace Models
 {
     [Table("F2_DRIVER_COMPETITION")]
     public class DriverCompetition
@@ -17,19 +17,19 @@ namespace Models.Models
         [Column("ID_DRIVER")]
         public int DriverId { get; set; }
 
-        [ForeignKey(nameof(DriverId))]
+        [ForeignKey("DriverId")]
         public Driver? Driver { get; set; }
 
         [Column("ID_COMPETITION")]
         public int CompetitionId { get; set; }
 
-        [ForeignKey(nameof(CompetitionId))]
+        [ForeignKey("CompetitionId")]
         public Competition? Competition { get; set; }
 
         [Column("ID_TEAM")]
         public int TeamId { get; set; }
 
-        [ForeignKey(nameof(TeamId))]
+        [ForeignKey("TeamId")]
         public Team? Team { get; set; }
     }
 }

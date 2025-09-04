@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Models.Models
+namespace Models
 {
     [Table("F2_DRIVER")]
     public class Driver
@@ -21,14 +21,14 @@ namespace Models.Models
         [Column("ID_COUNTRY")]
         public int CountryId { get; set; }
 
-        [ForeignKey(nameof(CountryId))]
+        [ForeignKey("CountryId")]
         public Country? Country { get; set; }
 
         [Column("ID_STATS")]
         public int StatsId { get; set; }
 
-        [ForeignKey(nameof(StatsId))]
-        public Stats Stats { get; set; }
+        [ForeignKey("StatsId")]
+        public Stats? Stats { get; set; }
 
         //public List<Competition> CompetitionList { get; set; }
     }

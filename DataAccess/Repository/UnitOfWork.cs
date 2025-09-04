@@ -12,6 +12,15 @@ namespace DataAccess.Repository
     {
         private readonly ApplicationDbContext _db;
         public ICompetitionRepository Competition { get; private set; }
+        public ICategoryRepository Category { get; private set; }
+        public ICircuitRepository Circuit { get; private set; }
+        public ICountryRepository Country { get; private set; }
+        public IDriverCompetitionRepository DriverCompetition { get; private set; }
+        public IDriverRepository Driver { get; private set; }
+        public IFastLapRepository FastLap { get; private set; }
+        public IRaceRepository Race { get; private set; }
+        public IStatsRepository Stats { get; private set; }
+        public ITeamRepository Team { get; private set; }
 
         public UnitOfWork(ApplicationDbContext db)
         {

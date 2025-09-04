@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.Models
+namespace Models
 {
     [Table("F2_RACE")]
     public class Race
@@ -23,7 +23,7 @@ namespace Models.Models
         [Column("ID_CIRCUIT")]
         public int CircuitId { get; set; }
 
-        [ForeignKey(nameof(CircuitId))]
+        [ForeignKey("CircuitId")]
         public Circuit? circuit { get; set; }
 
         [Column("IMAGE_ROUTE")]

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace Models.Models
+namespace Models
 {
     [Table("F2_CIRCUIT")]
     public class Circuit
