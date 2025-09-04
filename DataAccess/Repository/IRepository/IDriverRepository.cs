@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Repository.IRepository
 {
-    public interface ICompetitionRepository : IRepository<Competition>
+    public interface IDriverRepository : IRepository<Driver>
     {
-        void Update(Competition obj);
+        void Update(Driver obj);
     }
 }

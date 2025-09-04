@@ -9,17 +9,17 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Repository
 {
-    public class CompetitionRepository : Repository<Competition>, ICompetitionRepository
+    public class RaceRepository : Repository<Race>, IRaceRepository
     {
         private readonly ApplicationDbContext _db;
 
-        public CompetitionRepository(ApplicationDbContext db) : base(db) 
+        public RaceRepository(ApplicationDbContext db) : base(db) 
         {
             _db = db;
         }
-        public void Update(Competition obj)
+        public void Update(Race obj)
         {
-            _db.Competitions.Update(obj);
+            _db.Races.Update(obj);
         }
     }
 }
