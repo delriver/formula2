@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Mis Competiciones";
+}
+
+<div class="container text-center">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Mis competiciones</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-body p-4">
+        <div class="row pb-3">
+            <div class="col-12 text-end">
+                <a asp-controller="Competition" asp-action="Upsert" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i> Crear Nueva Competición
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
