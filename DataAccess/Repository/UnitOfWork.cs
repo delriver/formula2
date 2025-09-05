@@ -25,11 +25,26 @@ namespace DataAccess.Repository
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
+            Competition = new CompetitionRepository(_db);
+            Category = new CategoryRepository(_db);
+            Circuit = new CircuitRepository(_db);
+            Country = new CountryRepository(_db);
+            DriverCompetition = new DriverCompetitionRepository(_db);
+            Driver = new DriverRepository(_db);
+            FastLap = new FastLapRepository(_db);
+            Race = new RaceRepository(_db);
+            Stats = new StatsRepository(_db);
+            Team = new TeamRepository(_db);
         }
 
         public void Save()
         {
             _db.SaveChanges();
+        }
+
+        public Microsoft.EntityFrameworkCore.DbContext GetContext()
+        {
+            return this._db;
         }
     }
 }

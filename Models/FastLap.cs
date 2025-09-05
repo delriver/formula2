@@ -13,7 +13,7 @@ namespace Models
         public TimeOnly LapTime { get; set; }
 
         [Column("ID_DRIVER")]
-        public int DriverId {  get; set; }
+        public int? DriverId {  get; set; }
 
         [ForeignKey("DriverId")]
         public Driver? Driver { get; set; }

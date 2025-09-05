@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Crear Piloto";
+}
+
+<div class="container text-center">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Crear piloto</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body pt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="border p-3">
+                    <div class="form-floating py-2 col-12">
+                        <label class="ms-2">Nombre</label>
+                        <input id="Name" type="text" class="form-control border-0 shadow" />
+                    </div>
+                    <div class="form-floating py-2 col-12 row-4">
+                        <label class="ms-2">Descripción</label>
+                        <textarea id="Description" rows="4" placeholder="" class="form-control border-0 shadow" style="height: 100px; min-height: 100px;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body p-4">
+        <div class="row pb-3">
+            <div class="col-12 text-end">
+                <button class="btn btn-primary" id="btnSave">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/Driver/DriverUpsert.js" asp-append-version="true"></script>

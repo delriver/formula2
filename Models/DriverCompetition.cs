@@ -21,13 +21,13 @@ namespace Models
         public Driver? Driver { get; set; }
 
         [Column("ID_COMPETITION")]
-        public int CompetitionId { get; set; }
+        public int? CompetitionId { get; set; }
 
         [ForeignKey("CompetitionId")]
         public Competition? Competition { get; set; }
 
         [Column("ID_TEAM")]
-        public int TeamId { get; set; }
+        public int? TeamId { get; set; }
 
         [ForeignKey("TeamId")]
         public Team? Team { get; set; }

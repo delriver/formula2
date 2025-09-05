@@ -21,7 +21,7 @@ namespace Models
         public string? Description { get; set; }
 
         [Column("ID_STATS")]
-        public int StatsId { get; set; }
+        public int? StatsId { get; set; }
 
         [ForeignKey("StatsId")]
         public Stats? Stats { get; set; }

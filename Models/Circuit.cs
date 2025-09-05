@@ -19,13 +19,13 @@ namespace Models
         public string? ImgSrc { get; set; }
 
         [Column("ID_COUNTRY")]
-        public int CountryId { get; set; }
+        public int? CountryId { get; set; }
 
         [ForeignKey("CountryId")]
         public Country? Country { get; set; }
 
         [Column("ID_FASTEST_LAP")]
-        public int IdFastestLap {  get; set; }
+        public int? IdFastestLap {  get; set; }
 
         [ForeignKey("IdFastestLap")]
         public FastLap? FastestLap { get; set; }

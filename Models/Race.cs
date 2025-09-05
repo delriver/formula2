@@ -21,7 +21,7 @@ namespace Models
         public string? Description { get; set; }
 
         [Column("ID_CIRCUIT")]
-        public int CircuitId { get; set; }
+        public int? CircuitId { get; set; }
 
         [ForeignKey("CircuitId")]
         public Circuit? circuit { get; set; }
@@ -33,7 +33,7 @@ namespace Models
         public int Laps { get; set; }
 
         [Column("ID_COUNTRY")]
-        public int CountryId { get; set; }
+        public int? CountryId { get; set; }
 
         [ForeignKey("CountryId")]
         public Country? Country { get; set; }

@@ -19,13 +19,13 @@ namespace Models
         public string? ImgSrc { get; set; }
 
         [Column("ID_COUNTRY")]
-        public int CountryId { get; set; }
+        public int? CountryId { get; set; }
 
         [ForeignKey("CountryId")]
         public Country? Country { get; set; }
 
         [Column("ID_STATS")]
-        public int StatsId { get; set; }
+        public int? StatsId { get; set; }
 
         [ForeignKey("StatsId")]
         public Stats? Stats { get; set; }
